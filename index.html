@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <h1 class="header__title">Where in the world?</h1>
+
+        <div class="header__icon">
+          <img src="./img/luna.png" alt="luna" class="img_luna">
+          <p class="header_text">Dark Mode</p>
+        </div>
+      </div>
+    </header>
+
+    <form class="formulario container">
+      <input type="text" name="buscar" id="buscar" class="input_style" placeholder="Search for a country...">
+
+      <input list="country" id="buscarCountry" name="buscarCountry" class="input_style"  placeholder="Filter by Region"/>
+      <datalist id="country">
+        <option value="Africa"></option>
+        <option value="America"></option>
+        <option value="Asia"></option>
+        <option value="Europe"></option>
+        <option value="Oceania"></option>
+      </datalist>
+    </form>
+
+    <main class="banderas container">
+      <div class="banderas__grid">
+  
+      </div>
+    </main>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

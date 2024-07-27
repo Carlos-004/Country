@@ -1,0 +1,38 @@
+@use "./variables" as v;
+
+
+@mixin telefono {
+  @media (max-width: v.$telefono) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: v.$tablet) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: v.$laptop) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: v.$desktop) {
+    @content;
+  }
+}
+
+@mixin grid($column,$espacio){
+  display: grid;
+  gap: $espacio;
+  grid-template-columns:repeat($column,1fr) ;
+}
+
+@mixin gridFr($frOne ,$frDos,$espacio){
+  display: grid;
+  gap: $espacio;
+  grid-template-columns:$frOne $frDos;
+}
